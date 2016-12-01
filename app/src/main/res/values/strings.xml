@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ThirThir_Git</string>
+    <string name="welcome_slogan">健康喝水不是空談</string>
+    <string name="info_statement">水噹噹將為您量身打造最適當的飲水量，需要您的一些小秘密，將會列為系統最高機密，請您放心輸入</string>
+    <string name="height">身高：</string>
+    <string name="weight">體重：</string>
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+    <string name="keep_secret">請幫我保密</string>
+    <string name="next_time">下次再說喔</string>
+    <string name="amount_statement">您可以自由決定每天想要達成的喝水量</string>
+    <string name="everyday_amount">每天想喝：</string>
+    <string name="ml">ml (c.c.)</string>
+    <string name="start">開始喝水</string>
+    <string name="recommend_stmt">根據您大方分享的秘密，我們推薦您每日所需得喝水量為              公升</string>
+
 </resources>
