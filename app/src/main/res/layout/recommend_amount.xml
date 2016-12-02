@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ml"
+        android:textSize="35px"/>
+    <!--作為基準-->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv01"
+        android:layout_marginBottom="60dp"
+        android:text="@string/recommend_stm"
+        android:textSize="35px"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv01"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start"
+        android:textSize="30px"
+        android:textColor="@color/dark_gray"
+        android:background="@drawable/bluecircle_bg"/>
+
+</RelativeLayout>

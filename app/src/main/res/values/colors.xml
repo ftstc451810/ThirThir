@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="light_sky_blue">#87CEFA</color>
+    <color name="shallow_blue">#c8e2ff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="wisteria">#5C50E6</color>
+    <color name="mauve">#6640FF</color>
+    <color name="dark_gray">#404040</color>
 </resources>
