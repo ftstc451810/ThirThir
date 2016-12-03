@@ -10,7 +10,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/ml"
-        android:textSize="35px"/>
+        android:textSize="35px"
+        android:background="@drawable/whiterec_bg"/>
     <!--作為基準-->
     <TextView
         android:layout_width="300dp"

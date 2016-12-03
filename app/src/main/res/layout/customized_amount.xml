@@ -29,7 +29,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/tv_height"
+            android:layout_toRightOf="@id/tv_everyday_amount"
             android:layout_marginLeft="5dp"
             />
         <TextView
@@ -41,11 +41,12 @@
             android:text="@string/cm"
             android:textSize="35px"/>
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_height"
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_everyday_amount"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="80dp"/>
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/purple_line"/>
     </RelativeLayout>
     <TextView
         android:layout_width="300dp"
