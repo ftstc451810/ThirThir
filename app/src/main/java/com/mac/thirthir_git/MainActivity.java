@@ -2,6 +2,7 @@ package com.mac.thirthir_git;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -36,13 +37,32 @@ public class MainActivity extends Activity {
         RelativeLayout rl_remind_content = (RelativeLayout)findViewById(R.id.rl_remind_content);
         TextView tv_remind_stm = (TextView)findViewById(R.id.tv_remind_stm);
         tv_remind_stm.setText("");
+
+        TextView tv_remind_setbtn = (TextView)findViewById(R.id.tv_remind_setbtn);
+        tv_remind_setbtn.setVisibility(View.GONE);
+        TextView tv_remind_stopbtn = new TextView(this);
+        RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(60,60);
+        para04.topMargin = 95;
+        para04.leftMargin = 100;
+        rl_remind_content.addView(tv_remind_stopbtn,para04);
+        TextView tv_remind_changebtn = new TextView(this);
+        RelativeLayout.LayoutParams para05 = new RelativeLayout.LayoutParams(60,60);
+        para05.topMargin = 95;
+        para05.leftMargin = 190; //100+60+15+15(兩個按鈕中間距離30)
+        rl_remind_content.addView(tv_remind_changebtn,para05);
+
         LinearLayout subLayout = new LinearLayout(this);
         subLayout.setOrientation(LinearLayout.VERTICAL);
         RelativeLayout.LayoutParams para = new RelativeLayout.LayoutParams(10,10);
-        para.rightMargin = 5;
+        para.rightMargin = 5;  //para 給數字圖標用
         para.addRule(RelativeLayout.CENTER_VERTICAL, -1);  //對父控件的位置置中
         RelativeLayout.LayoutParams para02 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT);
+                ViewGroup.LayoutParams.WRAP_CONTENT);  //para02 給數字右邊的時間用
+        RelativeLayout.LayoutParams para03 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);  //para03給新生成的sublayout用
+        para03.leftMargin = 100;
+        para03.topMargin = 40;
+
 
         for(int i=1; i<=REMIND_COUNT; i++){
             LinearLayout listLayout = new LinearLayout(this);
@@ -51,16 +71,19 @@ public class MainActivity extends Activity {
             TextView tv = new TextView(this);
             String i2 = ""+i;
             tv.setText(i2);
-            tv.setTextSize(8);
+            tv.setTextSize(14);
             tv.setBackgroundResource(R.drawable.whitecircle_bg);
             listLayout.addView(tv,para);
 
             TextView tv02 = new TextView(this);
             tv02.setText(REMIND_TIME[i-1]);
-            tv02.setTextSize(12);
+            tv02.setTextSize(20);
             listLayout.addView(tv02,para02);
 
+            subLayout.addView(listLayout);
         }
+
+        rl_remind_content.addView(subLayout);
 
     }
 
