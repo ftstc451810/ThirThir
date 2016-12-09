@@ -84,6 +84,8 @@ public class MainActivity extends Activity {
         }
 
         rl_remind_content.addView(subLayout);
+        //insistance: today is Friday. there's a blue feelings.
+        
 
     }
 
