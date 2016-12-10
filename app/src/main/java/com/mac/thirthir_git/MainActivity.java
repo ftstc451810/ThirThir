@@ -40,20 +40,29 @@ public class MainActivity extends Activity {
 
         TextView tv_remind_setbtn = (TextView)findViewById(R.id.tv_remind_setbtn);
         tv_remind_setbtn.setVisibility(View.GONE);
+
         TextView tv_remind_stopbtn = new TextView(this);
+        tv_remind_stopbtn.setText(getResources().getString(R.string.stop));
+        tv_remind_stopbtn.setBackgroundResource(R.drawable.bluecircle_bg);
         RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(60,60);
-        para04.topMargin = 95;
-        para04.leftMargin = 100;
+        para04.topMargin = 300;
+        para04.leftMargin = 400;
         rl_remind_content.addView(tv_remind_stopbtn,para04);
+
         TextView tv_remind_changebtn = new TextView(this);
-        RelativeLayout.LayoutParams para05 = new RelativeLayout.LayoutParams(60,60);
-        para05.topMargin = 95;
-        para05.leftMargin = 190; //100+60+15+15(兩個按鈕中間距離30)
+        tv_remind_changebtn.setText(getResources().getString(R.string.change));
+        tv_remind_changebtn.setTextSize(25);
+        tv_remind_changebtn.setBackgroundResource(R.drawable.bluecircle_bg);
+        RelativeLayout.LayoutParams para05 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
+        para05.topMargin = 300;
+        para05.leftMargin = 600; //100+60+15+15(兩個按鈕中間距離30)
         rl_remind_content.addView(tv_remind_changebtn,para05);
 
         LinearLayout subLayout = new LinearLayout(this);
         subLayout.setOrientation(LinearLayout.VERTICAL);
-        RelativeLayout.LayoutParams para = new RelativeLayout.LayoutParams(10,10);
+        RelativeLayout.LayoutParams para = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
         para.rightMargin = 5;  //para 給數字圖標用
         para.addRule(RelativeLayout.CENTER_VERTICAL, -1);  //對父控件的位置置中
         RelativeLayout.LayoutParams para02 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
@@ -85,7 +94,7 @@ public class MainActivity extends Activity {
 
         rl_remind_content.addView(subLayout);
         //insistance: today is Friday. there's a blue feelings.
-        
+
 
     }
 
