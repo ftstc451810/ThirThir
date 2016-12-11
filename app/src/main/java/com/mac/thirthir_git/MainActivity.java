@@ -44,9 +44,10 @@ public class MainActivity extends Activity {
         TextView tv_remind_stopbtn = new TextView(this);
         tv_remind_stopbtn.setText(getResources().getString(R.string.stop));
         tv_remind_stopbtn.setBackgroundResource(R.drawable.bluecircle_bg);
-        RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(60,60);
-        para04.topMargin = 300;
-        para04.leftMargin = 400;
+        tv_remind_stopbtn.setTextSize(25,25);
+        RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(100,100);
+        para04.topMargin = 400;
+        para04.leftMargin = 450;
         rl_remind_content.addView(tv_remind_stopbtn,para04);
 
         TextView tv_remind_changebtn = new TextView(this);
@@ -55,8 +56,8 @@ public class MainActivity extends Activity {
         tv_remind_changebtn.setBackgroundResource(R.drawable.bluecircle_bg);
         RelativeLayout.LayoutParams para05 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
-        para05.topMargin = 300;
-        para05.leftMargin = 600; //100+60+15+15(兩個按鈕中間距離30)
+        para05.topMargin = 400;
+        para05.leftMargin = 700; //100+60+15+15(兩個按鈕中間距離30)
         rl_remind_content.addView(tv_remind_changebtn,para05);
 
         LinearLayout subLayout = new LinearLayout(this);
