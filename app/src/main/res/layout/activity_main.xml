@@ -51,7 +51,7 @@
                 android:layout_width="350dp"
                 android:layout_height="2dp"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/purple_line" />
+                android:background="@drawable/purple_line"/>
 
             <TextView
                 android:id="@+id/tv02"

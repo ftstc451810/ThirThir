@@ -44,8 +44,12 @@ public class MainActivity extends Activity {
         TextView tv_remind_stopbtn = new TextView(this);
         tv_remind_stopbtn.setText(getResources().getString(R.string.stop));
         tv_remind_stopbtn.setBackgroundResource(R.drawable.bluecircle_bg);
-        tv_remind_stopbtn.setTextSize(25,25);
-        RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(100,100);
+        tv_remind_stopbtn.setTextSize(25);
+        tv_remind_stopbtn.setScaleX(30);
+        tv_remind_stopbtn.setScaleY(30);
+        RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
+        //RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(400,400);
         para04.topMargin = 400;
         para04.leftMargin = 450;
         rl_remind_content.addView(tv_remind_stopbtn,para04);
@@ -57,21 +61,21 @@ public class MainActivity extends Activity {
         RelativeLayout.LayoutParams para05 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
         para05.topMargin = 400;
-        para05.leftMargin = 700; //100+60+15+15(兩個按鈕中間距離30)
+        para05.leftMargin = 700;
         rl_remind_content.addView(tv_remind_changebtn,para05);
 
         LinearLayout subLayout = new LinearLayout(this);
         subLayout.setOrientation(LinearLayout.VERTICAL);
         RelativeLayout.LayoutParams para = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
-        para.rightMargin = 5;  //para 給數字圖標用
+        para.rightMargin = 10;  //para 給數字圖標用
         para.addRule(RelativeLayout.CENTER_VERTICAL, -1);  //對父控件的位置置中
         RelativeLayout.LayoutParams para02 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);  //para02 給數字右邊的時間用
         RelativeLayout.LayoutParams para03 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);  //para03給新生成的sublayout用
-        para03.leftMargin = 100;
-        para03.topMargin = 40;
+        para03.leftMargin = 400;
+        para03.topMargin = 60;
 
 
         for(int i=1; i<=REMIND_COUNT; i++){
@@ -83,6 +87,8 @@ public class MainActivity extends Activity {
             tv.setText(i2);
             tv.setTextSize(14);
             tv.setBackgroundResource(R.drawable.whitecircle_bg);
+            tv.setScaleX(16);
+            tv.setScaleY(16);
             listLayout.addView(tv,para);
 
             TextView tv02 = new TextView(this);
@@ -93,7 +99,7 @@ public class MainActivity extends Activity {
             subLayout.addView(listLayout);
         }
 
-        rl_remind_content.addView(subLayout);
+        rl_remind_content.addView(subLayout,para03);
         //insistance: today is Friday. there's a blue feelings.
         //continue to reading articles for mental growth
         //nearly forget to write sth.
