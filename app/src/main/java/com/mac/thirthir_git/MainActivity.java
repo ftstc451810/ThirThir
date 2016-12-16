@@ -103,7 +103,7 @@ public class MainActivity extends Activity {
         //insistance: today is Friday. there's a blue feelings.
         //continue to reading articles for mental growth
         //nearly forget to write sth.
-
+        //1216 a little bit shame for lousy presentation to PM Shu.
 
     }
 
