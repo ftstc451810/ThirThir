@@ -104,6 +104,8 @@ public class MainActivity extends Activity {
         //continue to reading articles for mental growth
         //nearly forget to write sth.
         //1216 a little bit shame for lousy presentation to PM Shu.
+        //only wanna find my true love
+        
 
     }
 
