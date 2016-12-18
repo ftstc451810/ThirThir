@@ -45,8 +45,8 @@ public class MainActivity extends Activity {
         tv_remind_stopbtn.setText(getResources().getString(R.string.stop));
         tv_remind_stopbtn.setBackgroundResource(R.drawable.bluecircle_bg);
         tv_remind_stopbtn.setTextSize(25);
-        tv_remind_stopbtn.setScaleX(1);
-        tv_remind_stopbtn.setScaleY(2);
+//        tv_remind_stopbtn.setScaleX(1);  //胖瘦效果不對
+//        tv_remind_stopbtn.setScaleY(2);
         RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
         //RelativeLayout.LayoutParams para04 = new RelativeLayout.LayoutParams(400,400);
@@ -87,8 +87,6 @@ public class MainActivity extends Activity {
             tv.setText(i2);
             tv.setTextSize(14);
             tv.setBackgroundResource(R.drawable.whitecircle_bg);
-            tv.setScaleX(2);
-            tv.setScaleY(1);
             listLayout.addView(tv,para);
 
             TextView tv02 = new TextView(this);
@@ -100,12 +98,7 @@ public class MainActivity extends Activity {
         }
 
         rl_remind_content.addView(subLayout,para03);
-        //insistance: today is Friday. there's a blue feelings.
-        //continue to reading articles for mental growth
-        //nearly forget to write sth.
-        //1216 a little bit shame for lousy presentation to PM Shu.
-        //only wanna find my true love
-        
+
 
     }
 
