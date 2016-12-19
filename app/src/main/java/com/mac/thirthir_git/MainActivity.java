@@ -99,7 +99,7 @@ public class MainActivity extends Activity {
 
         rl_remind_content.addView(subLayout,para03);
 
-
+//last day when I write only comment
     }
 
     private void setInsistanceContent() {
