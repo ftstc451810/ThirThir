@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends Activity {
 
 
@@ -39,7 +41,7 @@ public class MainActivity extends Activity {
         tv_remind_stm.setVisibility(View.INVISIBLE);
         RelativeLayout rl_remind_already = (RelativeLayout)findViewById(R.id.rl_remind_already);
         rl_remind_already.setVisibility(View.VISIBLE);
-
+        ArrayList array = new ArrayList();
         TextView tv_upper = (TextView)findViewById(R.id.tv_upper);
         TextView tv_set01 = (TextView)findViewById(R.id.tv_set01);
         TextView tv_middle = (TextView)findViewById(R.id.tv_middle);
@@ -47,8 +49,16 @@ public class MainActivity extends Activity {
         TextView tv_below = (TextView)findViewById(R.id.tv_below);
         TextView tv_set03 = (TextView)findViewById(R.id.tv_set03);
         //將控件放入序列方便設定
+        array.add(tv_upper);
+        array.add(tv_set01);
+        array.add(tv_middle);
+        array.add(tv_set02);
+        array.add(tv_below);
+        array.add(tv_set03);
 
         if(REMIND_COUNT == 1){
+            //array.get(0)  //只能取值
+
 
         }
 //        RelativeLayout rl_remind_content = (RelativeLayout)findViewById(R.id.rl_remind_content);
