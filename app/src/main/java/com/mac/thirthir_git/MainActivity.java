@@ -58,6 +58,8 @@ public class MainActivity extends Activity {
 
         if(REMIND_COUNT == 1){
             //array.get(0)  //只能取值
+            //array[0];
+            //無法用這方法get
 
 
         }
