@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 public class MainActivity extends Activity {
 
 
@@ -41,27 +39,56 @@ public class MainActivity extends Activity {
         tv_remind_stm.setVisibility(View.INVISIBLE);
         RelativeLayout rl_remind_already = (RelativeLayout)findViewById(R.id.rl_remind_already);
         rl_remind_already.setVisibility(View.VISIBLE);
-        ArrayList array = new ArrayList();
+//        ArrayList array = new ArrayList();
         TextView tv_upper = (TextView)findViewById(R.id.tv_upper);
         TextView tv_set01 = (TextView)findViewById(R.id.tv_set01);
         TextView tv_middle = (TextView)findViewById(R.id.tv_middle);
         TextView tv_set02 = (TextView)findViewById(R.id.tv_set02);
         TextView tv_below = (TextView)findViewById(R.id.tv_below);
         TextView tv_set03 = (TextView)findViewById(R.id.tv_set03);
-        //將控件放入序列方便設定
-        array.add(tv_upper);
-        array.add(tv_set01);
-        array.add(tv_middle);
-        array.add(tv_set02);
-        array.add(tv_below);
-        array.add(tv_set03);
+//        //將控件放入序列方便設定
+//        array.add(tv_upper);
+//        array.add(tv_set01);
+//        array.add(tv_middle);
+//        array.add(tv_set02);
+//        array.add(tv_below);
+//        array.add(tv_set03);
 
         if(REMIND_COUNT == 1){
             //array.get(0)  //只能取值
             //array[0];
             //無法用這方法get
-
-
+            //重點是放入的類型通通為object，不含方法“setVisibility()”
+            tv_upper.setVisibility(View.INVISIBLE);
+            tv_set01.setVisibility(View.INVISIBLE);
+            tv_middle.setVisibility(View.VISIBLE);
+            tv_middle.setText("1");
+            tv_set02.setVisibility(View.VISIBLE);
+            tv_set02.setText(REMIND_TIME[0]);
+            tv_below.setVisibility(View.INVISIBLE);
+            tv_set03.setVisibility(View.INVISIBLE);
+        }else if(REMIND_COUNT == 2){
+            tv_upper.setVisibility(View.VISIBLE);
+            tv_set01.setVisibility(View.VISIBLE);
+            tv_set01.setText(REMIND_TIME[0]);
+            tv_middle.setVisibility(View.VISIBLE);
+            tv_middle.setText("2");
+            tv_set02.setVisibility(View.VISIBLE);
+            tv_set02.setText(REMIND_TIME[1]);
+            tv_below.setVisibility(View.INVISIBLE);
+            tv_set03.setVisibility(View.INVISIBLE);
+        }else if(REMIND_COUNT == 3){
+            tv_upper.setVisibility(View.VISIBLE);
+            tv_set01.setVisibility(View.VISIBLE);
+            tv_set01.setText(REMIND_TIME[0]);
+            tv_middle.setVisibility(View.VISIBLE);
+            tv_middle.setText("2");
+            tv_set02.setVisibility(View.VISIBLE);
+            tv_set02.setText(REMIND_TIME[1]);
+            tv_below.setVisibility(View.VISIBLE);
+            tv_below.setText("3");
+            tv_set03.setVisibility(View.VISIBLE);
+            tv_set03.setText(REMIND_TIME[2]);
         }
 //        RelativeLayout rl_remind_content = (RelativeLayout)findViewById(R.id.rl_remind_content);
 //        TextView tv_remind_stm = (TextView)findViewById(R.id.tv_remind_stm);
