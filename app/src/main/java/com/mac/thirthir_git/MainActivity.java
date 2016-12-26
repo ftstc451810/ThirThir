@@ -69,16 +69,16 @@ public class MainActivity extends Activity {
             tv_set03.setVisibility(View.INVISIBLE);
         }else if(REMIND_COUNT == 2){
             tv_upper.setVisibility(View.VISIBLE);
-            tv_upper.setPadding(130,30,0,0);
+           // tv_upper.setPadding(130,30,0,0);//單位不一致，而且圖跟字會跑掉
             tv_set01.setVisibility(View.VISIBLE);
             tv_set01.setText(REMIND_TIME[0]);
-            tv_set01.setPadding(160,26,0,0);
+           // tv_set01.setPadding(160,26,0,0);
             tv_middle.setVisibility(View.VISIBLE);
-            tv_middle.setPadding(130,60,0,0);
+           // tv_middle.setPadding(130,60,0,0);
             tv_middle.setText("2");
             tv_set02.setVisibility(View.VISIBLE);
             tv_set02.setText(REMIND_TIME[1]);
-            tv_set02.setPadding(160,56,0,0);
+           // tv_set02.setPadding(160,56,0,0);
             tv_below.setVisibility(View.INVISIBLE);
             tv_set03.setVisibility(View.INVISIBLE);
         }else if(REMIND_COUNT == 3){
