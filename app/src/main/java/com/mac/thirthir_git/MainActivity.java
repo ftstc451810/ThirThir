@@ -94,6 +94,7 @@ public class MainActivity extends Activity {
             tv_set03.setVisibility(View.VISIBLE);
             tv_set03.setText(REMIND_TIME[2]);
         }
+        //12/28 study on calender
         //12/27 so tired >< tomorow have to write code before learning Python
         //12/23土法煉鋼完成區塊操作
 //        RelativeLayout rl_remind_content = (RelativeLayout)findViewById(R.id.rl_remind_content);
