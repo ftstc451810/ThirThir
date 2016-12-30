@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
             tv_set03.setVisibility(View.VISIBLE);
             tv_set03.setText(REMIND_TIME[2]);
         }
-        //12/29 learn lots but without code...
+        //12/29 learn lots but without code...12/30 gonna writedown my goals
         //12/28 study on calender
         //12/27 so tired >< tomorrow have to write code before learning Python
         //12/23土法煉鋼完成區塊操作
