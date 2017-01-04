@@ -95,8 +95,7 @@ public class MainActivity extends Activity {
             tv_set03.setText(REMIND_TIME[2]);
         }
 
-
-        //0103學完java框架，晚上回去加油
+        
         //12/23土法煉鋼完成區塊操作
 //        RelativeLayout rl_remind_content = (RelativeLayout)findViewById(R.id.rl_remind_content);
 //        TextView tv_remind_stm = (TextView)findViewById(R.id.tv_remind_stm);
