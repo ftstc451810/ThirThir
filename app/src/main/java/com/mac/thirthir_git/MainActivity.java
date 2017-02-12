@@ -97,7 +97,7 @@ public class MainActivity extends Activity {
 
         //實作原理、設計模型、行動裝置底層運作方式
 //design web, and fill keyword list
-
+//
 
         //12/23土法煉鋼完成區塊操作
 //        RelativeLayout rl_remind_content = (RelativeLayout)findViewById(R.id.rl_remind_content);
